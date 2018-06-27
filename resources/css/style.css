@@ -1,6 +1,6 @@
 html {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 14px;
   color: dimgrey;
 }
 
@@ -190,7 +190,6 @@ div .infoMini {
   justify-content: center;
   align-items: center;
   background-color: lightgrey;
-  padding-top: 2em;
   padding-bottom:2em;
 }
 
@@ -203,6 +202,7 @@ div .infoMini {
 .main3 h1{
   display: flex;
   justify-content: center;
+  margin: 2rem 0;
 }
 
 .main3 section {
@@ -214,10 +214,92 @@ div .infoMini {
 .main3 section div {
   background-color: white;
   width: 33.3%;
-  margin: 1.8em 0.5em;
+  margin: 0.7rem 0.5em;
 }
 
 .main3 img {
   height:auto;
   width: 100%;
+}
+
+.main3 h2 {
+  margin: 1em 1em;
+}
+
+.main3 p {
+  margin: 0.5em 1em;
+  line-height: 1.2;
+}
+
+.main3 p:last-child {
+  margin-bottom: 1.5em;
+}
+
+/* Main Section 4 */
+
+.main4 {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2em;
+  text-align: center;
+
+}
+
+.main4 div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main Section 5 */
+
+.main5 {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+div.container {
+  display: flex;
+  width:1070px;
+}
+
+.section1 video {
+  width:100%;
+  height:auto;
+  margin-right: 1.5em;
+}
+
+#almost {
+  margin-top: 1.5em;
+  margin-bottom:.6em;
+}
+
+/* Footer */
+
+footer{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 64px;
+  border-top:solid lightgrey 0.5px;
+}
+
+footer .container {
+  width: 1070px;
+  display:flex;
+  justify-content: space-between;
+}
+
+footer p {
+  margin: 1em 1.5em;
+}
+
+#there {
+align-items: flex-start;
+margin: 1em;
 }
