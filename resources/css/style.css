@@ -14,6 +14,7 @@ h2 {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   color: dimgrey;
+  font-size: 18px;
 }
 
 
@@ -63,6 +64,41 @@ header .colmar {
   margin-right: 1em;
 }
 
+#media {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+
+        header .container {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+        }
+
+        header .colmar {
+          display: none;
+        }
+
+        .nav {
+          display: none;
+        }
+
+        #media {
+          display: inline-flex;
+          justify-content: space-around;
+          min-width: 100%;
+          align-items: center;
+          color: black;
+        }
+
+        #media img {
+          height: 3rem;
+        }
+
+        }
+
 /* Main Section 1 */
 
 .main1 {
@@ -105,6 +141,27 @@ header .colmar {
   text-align: center;
   color: white;
 }
+
+@media screen and (max-width: 500px) {
+
+        .main1 {
+          display: flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          background-color: lightgrey;
+        }
+
+        .main1 .container {
+          display: flex;
+          width:100%;
+        }
+
+        .main1 img {
+          display: none;
+        }
+
+      }
 
 /* Main Section 2 */
 
@@ -182,6 +239,72 @@ div .infoMini {
   margin-top: 0;
 }
 
+#main2mobile {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+
+
+  .main2 {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main2 .container {
+    display: flex;
+    width:100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div .section1 {
+    display: none;
+    }
+
+    div .section2 {
+      display: none;
+    }
+
+    #main2mobile {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      margin: 1em;
+      }
+
+      div .info{
+        border: none;
+        flex-direction: column;
+      }
+
+
+      div .infoMini {
+        display: flex;
+        flex-flow: column;
+        justify-content: center;
+        margin: 1em 1em;
+      }
+
+      .infoMini p {
+        margin: 0.5em 0;
+      }
+
+      #main2mobile img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em;
+      }
+
+      #main2mobile a {
+        color: blue;
+      }
+}
+
 /* Main Section 3 */
 
 .main3 {
@@ -235,6 +358,58 @@ div .infoMini {
   margin-bottom: 1.5em;
 }
 
+@media screen and (max-width: 500px) {
+
+  .main3 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding-bottom:2em;
+    border-top: 0.5px solid lightgrey;
+    margin-bottom: 0.5px solid lightgrey;
+  }
+
+  .main3 .container {
+    display: flex;
+    width:100%;
+    flex-direction: column;
+  }
+
+  .main3 h1{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .main3 section {
+    margin: 0 3.8em;
+    flex-direction: column;
+  }
+
+  .main3 section div {
+    background-color: lightgrey;
+    width: 100%;
+  }
+
+  .main3 img {
+    display: none
+  }
+
+  .main3 h2 {
+    margin: 1em 1em;
+  }
+
+  .main3 p {
+    display:none;
+  }
+
+  .main3 p:last-child {
+
+  }
+}
+
 /* Main Section 4 */
 
 .main4 {
@@ -279,6 +454,25 @@ div.container {
   margin-bottom:.6em;
 }
 
+@media screen and (max-width: 500px) {
+
+#containerMain5 {
+  max-width:100%;
+}
+
+ #video {
+    display:flex;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+
+  #almost, #there{
+    display: none;
+  }
+}
 /* Footer */
 
 footer{
@@ -302,4 +496,11 @@ footer p {
 #there {
 align-items: flex-start;
 margin: 1em;
+}
+
+@media screen and (max-width: 500px) {
+  #there {
+  align-items: center;
+  margin: 1em;
+  }
 }
